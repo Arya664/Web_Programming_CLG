@@ -5,18 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        table{
-            border: 2px solid black
+        html{
+            font-size: 200%;
         }
-        td{
-            border: 1px solid black;
+        table, tr, td{
             padding: 0px;
+            border-collapse: collapse;
+        }
+        td, tr{
+            border: 2px solid black;
+            padding: 30px;
+            padding-left: 40px;
+            gap: 0px;
         }
     </style>
 </head>
 <body>
-    <h1>Time Table</h1>
-    <table>
+    <center><h1>Time Table</h1></center>
+    <table align="center">
         <tr class="trr">
             <td rowspan="2">Train Name</td>
             <td colspan="2">Time</td>
@@ -47,6 +53,29 @@
             <td>07:10 am</td>
             <td>Vadodara</td>
             <td>Surat</td>
+        </tr>
+    </table>
+    <center><h1>Table 2</h1></center>
+    <table align="center">
+        <tr>
+            <td rowspan="2">A</td>
+            <td colspan="4">B</td>
+        </tr>
+        <tr>
+            <td>E</td>
+            <td style="padding-right: 100px;">F</td>
+            <td style="padding-right: 40px;">C</td>
+            <td></td>
+        </tr>
+    </table>
+
+    <center><h1>Table 3</h1></center>
+    <table align="center" style="width: 700px;">
+        <tr>
+            <td></td>
+            <td style="padding-right: 100px;">D</td>
+            <td></td>
+            <td></td>
         </tr>
     </table>
 </body>
