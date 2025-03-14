@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tags Demonstration</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- 
+    Description of all 43 tags: 
+
+    <body> – Defines the main content of an HTML document.
+    <title> – Specifies the title of the document, shown in the browser tab.
+    <li> – Represents a list item inside <ul> or <ol>.
+    <iframe> – Embeds another webpage inside the current document.
+    <head> – Contains metadata and links to stylesheets or scripts.
+    <font> – Defines text font, size, and color (deprecated).
+    <audio> – Embeds sound content, like music or voice clips.
+    <fieldset> – Groups related form elements together.
+    <center> – Centers text or content (deprecated).
+    <source> – Specifies multiple media sources for <audio> or <video>.
+    <legend> – Defines a caption for a <fieldset>.
+    <a> – Creates a hyperlink to another webpage or section.
+    <h1> to <h6> – Define headings, <h1> being the largest and <h6> the smallest.
+    <video> – Embeds video content in a webpage.
+    <form> – Creates an interactive form to collect user input.
+    <address> – Specifies contact details for an author or owner.
+    <hr> – Inserts a horizontal line to separate content.
+    <table> – Defines a table for displaying structured data.
+    <input> – Creates an input field for forms, like text or buttons.
+    <b> – Makes text bold without adding extra importance.
+    <html> – The root element of an HTML document.
+    <caption> – Provides a title for a <table>.
+    <textarea> – Creates a multi-line text input field.
+    <i> – Italicizes text, often for emphasis or stylistic purposes.
+    <p> – Defines a paragraph of text.
+    <td> – Defines a data cell inside a table row.
+    <select> – Creates a drop-down list for selecting options.
+    <u> – Underlines text (mostly used for stylistic purposes).
+    <pre> – Displays preformatted text with preserved spaces and line breaks.
+    <th> – Defines a header cell in a table.
+    <option> – Defines an item inside a <select> drop-down list.
+    <br> – Inserts a line break within text.
+    <img> – Embeds an image into the webpage.
+    <tr> – Defines a row in a table.
+    <marquee> – Creates a scrolling text or image effect (deprecated).
+    <sub> – Displays text as subscript (lowered text).
+    <ul> – Creates an unordered (bulleted) list.
+    <frameset> – Defines multiple frames in a webpage (deprecated).
+    <button> – Creates a clickable button.
+    <sup> – Displays text as superscript (raised text).
+    <ol> – Creates an ordered (numbered) list.
+    <frame> – Defines a single frame in a <frameset> (deprecated).
+    <datalist> – Provides predefined options for an <input> field
+    -->
+    <header>
+        <div class="marquee">
+            <marquee direction="">This document represents 43 HTML tags</marquee>
+        </div>
+    </header>
+    <main>
+        <section class="intro">
+            <h1>Hey there, Myself Arya Panchal </h1>
+            <h2><i>Hey there, Myself Arya Panchal</i></h2>
+            <h3><u>Hey there, Myself Arya Panchal</u></h3>
+            <h4 class="comic-sans">Hey there, Myself Arya Panchal</h4>
+            <h5>Hey there, Myself Arya Panchal</h5>
+            <h6>Hey there, Myself Arya Panchal</h6>
+       
+            <img src="Images/Arya_Profile.png" alt="Arya Panchal's Profile Picture">
+            <audio controls>
+                <source src="Audio/heartbeat-2.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+            </audio>
+            <video controls>
+                <source src="Video/Bird_vid.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+           
+        </section>
+
+        <section class="hobbies">
+            <h3>My hobbies are</h3>
+            <ol>
+                <li>Volleyball</li>
+                <li>Coding</li>
+                <li>Video Games</li>
+            </ol>
+            <ul>
+                <li>Volleyball</li>
+                <li>Coding</li>
+                <li>Video Games</li>
+            </ul>
+        </section>
+
+        <section class="links">
+            <a style="color: aqua;" href="https://prakarsh.org" target="_blank">Prakarsh Website</a>
+            <iframe class="ifra" src="https://prakarsh.org" title="Prakarsh Website"></iframe>
+        </section>
+
+        <section class="form-section">
+            <h2>Fieldset</h2>
+            <fieldset>
+                <legend>Personalia:</legend>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="lname">Last Name:</label>
+                <textarea id="lname" name="lname"></textarea><br><br>
+                <label for="mail">Email:</label>
+                <input type="email" id="mail" name="mail"><br><br>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date"><br><br>
+            </fieldset>
+
+            <h2>Form</h2>
+            <form class="formm">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age"><br>
+                <label for="gender">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">Male
+                <input type="radio" id="female" name="gender" value="female">Female<br>
+                <label for="hobby">Hobby:</label>
+                <select id="hobby" name="hobby">
+                    <option value="volleyball">Volleyball</option>
+                    <option value="reading" selected>Reading</option>
+                    <option value="football">Football</option>
+                </select><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+        <section class="table-section">
+            <h2>Monthly Savings</h2>
+            <table>
+                <caption>Monthly Savings</caption>
+                <tr>
+                    <th>Month</th>
+                    <th>Savings</th>
+                </tr>
+                <tr>
+                    <td>January</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>February</td>
+                    <td>$30</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="pre-section">
+            <h2>Pre Tag</h2>
+            <pre>
+                Text in a pre element is displayed in a fixed-width font, and it preserves
+                both      spaces and
+                line breaks.
+            </pre>
+        </section>
+
+        <section class="text-formatting">
+            <p>This text contains <sub>Subscript</sub> text.</p>
+            <p>This text contains <sup>Superscript</sup> text.</p>
+        </section>
+
+        <section class="datalist-section">
+            <h2>Datalist Tag</h2>
+            <label for="langs">Choose your preferred language:</label>
+            <input list="lang" id="langs" name="langs">
+            <datalist id="lang">
+                <option value="C"></option>
+                <option value="Python"></option>
+                <option value="JAVA"></option>
+                <option value="Bhailang"></option>
+            </datalist><br>
+            <input type="submit" value="Submit">
+        </section>
+
+        <section class="contact">
+            <address>
+                Written by <a href="mailto:aryapanchal2022@gmail.com">Arya Panchal</a>.<br>
+                Visit us at:<br>
+                <a href="https://prakarsh.org">prakarsh.org</a><br>
+                Phone: 9537592664
+            </address>
+        </section>
+
+        <section class="frameset">
+            <frameset cols="30%, 40%, 30%">
+                <frame name="top" src="Images/Arya_Profile.png" />
+                <frame name="main" src="Images/background.avif" />
+                <frame name="bottom" src="Images/beautiful-luxury-hotel-swimming-pool.jpg" />
+                <noframes>
+
+                    <body>The browser you are working does
+                        not support frames.</body>
+                </noframes>
+            </frameset>
+        </section>
+    </main>
+</body>
+</html>
