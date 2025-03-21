@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Improved Form</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;  
+        }
+
+        .frm {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            padding: 30px 40px;
+            width: 500px;
+        }
+
+        .frm h2 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="number"],
+        input[type="email"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 60px;
+        }
+
+        .radio-group,
+        .checkbox-group {
+            display: flex;
+            gap: 15px;
+            margin-top: 5px;
+        }
+
+        .btn-group {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        input[type="reset"] {
+            background-color: #dc3545;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            scale: 1.1;
+        }
+    </style>
+</head>
+<body>
+    <form class="frm">
+        <h2>Registration Form</h2>
+
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+        </div>
+
+        <div class="form-group">
+            <label for="pass">Password:</label>
+            <input id="pass" type="password" placeholder="Enter Password">
+        </div>
+
+        <div class="form-group">
+            <label for="add">Address:</label>
+            <textarea id="add" placeholder="Enter your address"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone No.:</label>
+            <input id="phone" type="number" placeholder="Enter Phone Number">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input id="email" type="email" placeholder="Enter Email">
+        </div>
+
+        <div class="form-group">
+            <label>Gender:</label>
+            <div class="radio-group">
+                <label><input name="gender" type="radio"> Male</label>
+                <label><input name="gender" type="radio"> Female</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Hobbies:</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="hob"> Volleyball</label>
+                <label><input type="checkbox" name="hob"> Reading</label>
+                <label><input type="checkbox" name="hob"> Drawing</label>
+                <label><input type="checkbox" name="hob"> Dancing</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="country">Choose your Country:</label>
+            <select id="country">
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="London">London</option>
+                <option value="Germany">Germany</option>
+                <option value="China">China</option>
+                <option value="Japan" selected>Japan</option>
+                <option value="Norway">Norway</option>
+                <option value="Sri Lanka">Sri Lanka</option>
+                <option value="France">France</option>
+            </select>
+        </div>
+
+        <div class="btn-group">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</body>
+</html>
